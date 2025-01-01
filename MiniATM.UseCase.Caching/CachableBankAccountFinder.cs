@@ -8,9 +8,10 @@ namespace MiniATM.UseCase.Caching
 {
     public class CachableBankAccountFinder : IBankAccountFinder // a cachable finder using 'cache aside' strategy
     {
-        private static readonly JsonSerializerOptions serializerOptions = new() { 
-            
-        }; 
+        private static readonly JsonSerializerOptions serializerOptions = new()
+        {
+
+        };
 
         private readonly CachableBankAccountFinderOptions options;
         private readonly IBankAccountFinder parentFinder;
